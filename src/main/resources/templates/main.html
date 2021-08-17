@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study GitHub CI/CD</title>
+    <style>
+        .git-info {
+            font-size: 2em;
+        }
+
+        .text-bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1 style="margin-top: 3em">
+    Hello World!
+</h1>
+
+<p style="margin-top: 2em; font-weight: bold; font-size: 3em;">
+    Git 정보
+</p>
+
+<div class="git-info">
+    <p>
+        <span>분기</span>: <span class="text-bold" th:text="${gitInfo.branch}"></span>
+    </p>
+    <p>
+        <span>빌드 유저</span>: <span class="text-bold" th:text="${gitInfo.buildUser}"></span>
+    </p>
+    <p>
+        <span>빌드 버전</span>: <span class="text-bold" th:text="${gitInfo.buildVersion}"></span>
+    </p>
+    <p>
+        <span>커밋 식별자</span>: <span class="text-bold" th:text="${gitInfo.commitShortId}"></span>
+    </p>
+    <p>
+        <span>커밋 일자</span>: <span class="text-bold" th:text="${gitInfo.commitTime}"></span>
+    </p>
+</div>
+</body>
+</html>
