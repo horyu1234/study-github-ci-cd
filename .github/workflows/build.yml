@@ -28,7 +28,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: "[Backend] Build with Gradle"
-        run: ../gradlew build
+        run: ./gradlew build
 
       - name: "[Artifact] Upload"
         uses: actions/upload-artifact@v2
